@@ -4,8 +4,8 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   async rewrites() {
     return {
-      // The landing page is the original HaaS artifact, served verbatim from
-      // public/haas.html (Three.js scene, scroll story, all animations).
+      // The landing page is the flat HaaS one-pager, served verbatim from
+      // public/haas.html (2D mascot, scroll story, all animations).
       // beforeFiles so it wins over the app-router (site) home page.
       beforeFiles: [{ source: '/', destination: '/haas.html' }],
       afterFiles: [],
