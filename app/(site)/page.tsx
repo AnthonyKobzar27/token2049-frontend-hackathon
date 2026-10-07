@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { BigHand } from '@/components/mascot';
 import { Cta, Eyebrow, Headline, Lead, Section, StepCard } from '@/components/site';
 
-const TELEGRAM = process.env.NEXT_PUBLIC_TELEGRAM_URL || '#try';
+const TELEGRAM = process.env.NEXT_PUBLIC_TELEGRAM_URL || 'https://t.me/human_as_a_service_bot';
 const IMESSAGE = process.env.NEXT_PUBLIC_IMESSAGE_URL || '#try';
 
 const walls = ['Phone calls', 'Queues', 'In-person checks', 'Pickups'];

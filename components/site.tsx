@@ -33,7 +33,10 @@ export function Cta({ href, children, ghost = false }: { href: string; children:
     ? 'border border-white/20 bg-white/5 text-creamtext hover:border-white/45'
     : 'bg-gradient-to-r from-pinkish to-creamtext text-night hover:brightness-105';
   return (
-    <Link href={href} className={`inline-block rounded-full px-6 py-3 text-sm font-bold transition ${style}`}>
+    <Link
+      href={href}
+      {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+      className={`inline-block rounded-full px-6 py-3 text-sm font-bold transition ${style}`}>
       {children}
     </Link>
   );
